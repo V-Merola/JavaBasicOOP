@@ -14,6 +14,9 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        System.out.print("'V'");
+        System.out.print(", ");
+        System.out.print("'M'");
     }
 
     /**
@@ -24,6 +27,9 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         // Write your code here
+        System.out.println(29);
+        System.out.println(true);
+        System.out.println(4.99);
     }
 
     /**
@@ -38,5 +44,10 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
         // Write your code here
+        int age = 29;
+        boolean eat = true;
+        double price = 4.99;
+        System.out.println("Age = " + age  + "\nI had lunch? " + eat + "\nlunch price = " + price);
+
     }
 }
