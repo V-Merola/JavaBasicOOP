@@ -13,7 +13,7 @@ public class Main {
      */
     public static void exercise1() {
         System.out.println("Exercise 1: ");
-        System.out.println("Hello (my name)!"); //<--- Edit this line
+        System.out.println("Hello Vincenzo!"); //<--- Edit this line
     }
 
     /**
