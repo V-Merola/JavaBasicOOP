@@ -19,6 +19,9 @@ public class Main {
         System.out.println("\nExercise 1:");
         String ourNumberStr = "88";
         //Write your code here
+        int ourNumber = Integer.parseInt(ourNumberStr);
+        ourNumber += 2;
+        System.out.println(ourNumber);
     }
 
     /**
@@ -30,13 +33,13 @@ public class Main {
     private static void exercise2() {
         System.out.println("\nExercise 2a:");
         char ourChar = 'a';
-        String ourCharString = " "; // <--- Change this line
+        String ourCharString = String.valueOf(ourChar).toUpperCase(); // <--- Change this line
         // Notice below what happens, the `charAt()` method
         System.out.println(ourCharString.charAt(0));
 
         System.out.println("\nExercise 2b:");
         String anotherString = "Hello world";
-        int charAtIndex = 0; // <--- Change this line
+        int charAtIndex = 6; // <--- Change this line
         System.out.println("Make this print 'w' -> current result: '" + anotherString.charAt(charAtIndex) + "'");
     }
 
@@ -50,13 +53,13 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String intStrToConvert = "5.5"; // Change this line
+        String intStrToConvert = "5";//"5.5"; // Change this line
         System.out.println(Integer.valueOf(intStrToConvert));
 
-        String booleanStrToConvert = "maybe"; // And this line
+        String booleanStrToConvert = "true"; // And this line
         System.out.println(Boolean.valueOf(booleanStrToConvert));
 
-        String doubleStrToConvert = "true"; // Also this line
+        String doubleStrToConvert = "5.5"; // Also this line
         System.out.println(Double.valueOf(doubleStrToConvert));
     }
 
@@ -76,5 +79,18 @@ public class Main {
         System.out.println("\nExercise 4:");
         String startStr = "5 ";
         // Write your code here
+        int str1 = Integer.parseInt(startStr.trim());
+        System.out.println(str1);
+        str1 *=2;
+        System.out.println(str1);
+        String str2 = String.valueOf(str1);
+        System.out.println(str2);
+        str2 += str2;
+        System.out.println(str2);
+        double str3 = Double.parseDouble(str2);
+        str3 /= 3.5;
+        str3 = Math.floor(str3);
+        System.out.println(str3);
+
     }
 }
