@@ -16,6 +16,9 @@ public class Main {
     private static void exercise1() {
         System.out.println("\nExercise 1:");
         //Write your code here
+        String str = "Ciao Mi Chiamo Vincenzo";
+        System.out.println(str.toLowerCase());
+        System.out.println(str.toUpperCase());
     }
 
     /**
@@ -28,7 +31,7 @@ public class Main {
         String middleName = "(your middle name/any middle name)";
         String lastName = "(your last name)";
 
-        System.out.println(firstName + " " + middleName + " " + lastName); // <--- Edit this line
+        System.out.println(firstName.toUpperCase() + " " + middleName.toLowerCase() + " " + lastName.toUpperCase()); // <--- Edit this line
     }
 
 
@@ -70,7 +73,7 @@ public class Main {
         String middleNumbers = "       4 5 6";
         String earlyNumbers = "1 2 3";
 
-        System.out.println(); // <--- Write your code here
+        System.out.println(earlyNumbers + " " + middleNumbers.trim() + " " + endNumbers); // <--- Write your code here
     }
 
 
