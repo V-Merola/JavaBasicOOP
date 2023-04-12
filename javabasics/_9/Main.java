@@ -14,7 +14,7 @@ public class Main {
      */
     private static void exercise1() {
         System.out.println("\nExercise 1:");
-        int porridgeHeatInCentigrade = 30; // <--- Change this value
+        int porridgeHeatInCentigrade = 60; // <--- Change this value
 
         if (porridgeHeatInCentigrade < 60) {
             System.out.println("Too cold!");
@@ -39,6 +39,11 @@ public class Main {
         double lunchCost = 5.0;
 
         // Your if statement here
+        if(lunchCost <= remainingMoney){
+            System.out.println("Lunch time!");
+        }else{
+            System.out.println("You go hungry today");
+        }
     }
 
     /**
@@ -57,6 +62,15 @@ public class Main {
         System.out.println("\nExercise 3:");
         double ourDouble = 3.5;
         //Write your code here
+        if(ourDouble > 2.5){
+            System.out.println("Greater than");
+        }else{
+            ourDouble += 1.0;
+        }
+
+        if(ourDouble > 2.5){
+
+        }
     }
 
 
