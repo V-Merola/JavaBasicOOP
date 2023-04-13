@@ -68,8 +68,10 @@ public class Main {
             ourDouble += 1.0;
         }
 
-        if(ourDouble > 2.5){
-
+        if(ourDouble < 2.5){
+            System.out.println("Still less than");
+        }else{
+            System.out.println("Now greater than");
         }
     }
 
@@ -91,5 +93,14 @@ public class Main {
         int employeeAge = 30;
 
         //Write your if statement here
+        if(employeeAge >= 65){
+            System.out.println("Retired");
+        }else if(employeeAge >= 35){
+            System.out.println("Experienced Worker");
+        }else if(employeeAge >= 18){
+            System.out.println("New Worker");
+        }else{
+            System.out.println("School age");
+        }
     }
 }
