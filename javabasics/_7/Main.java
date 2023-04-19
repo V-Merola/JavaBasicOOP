@@ -55,7 +55,7 @@ public class Main {
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
-        String textFrom2Primitives = ""; // <--- Edit this line
+        String textFrom2Primitives = String.valueOf(1.5) + String.valueOf(67) + String.valueOf(true); // <--- Edit this line
         System.out.println(textFrom2Primitives);
     }
 
