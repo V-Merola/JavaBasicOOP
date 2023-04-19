@@ -1,6 +1,8 @@
 package javabasics._13;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,6 +25,20 @@ public class Main {
         ArrayList<Integer> numbers = new ArrayList<>();
 
         //Write your code here
+        Random rand = new Random();
+        for(int i = 0; i < 8; i++){
+           int num = rand.nextInt(10);
+           numbers.add(num);
+        }
+
+        System.out.println(numbers);
+        System.out.println(numbers.get(0));
+
+        for(int i = 0; i < 3; i++){
+            numbers.remove(i);
+        }
+
+        System.out.println(numbers.get(0));
     }
 
     /**
@@ -38,8 +54,23 @@ public class Main {
      * menu item correspond
      */
     public static void exercise2() {
-        System.out.println("\nExercise 1:");
+        System.out.println("\nExercise 2:");
         //Write your code here
+        ArrayList <String> menuItems = new ArrayList<>();
+        ArrayList <Integer> menuPrice = new ArrayList<>();
+
+        menuItems.add("primo");
+        menuItems.add("secondo");
+        menuItems.add("dolce");
+
+        menuPrice.add(8);
+        menuPrice.add(12);
+        menuPrice.add(5);
+
+        for(int i = 0; i < menuItems.size(); i++){
+            System.out.println(menuItems.get(i) + " = " + menuPrice.get(i));
+        }
+
     }
 
     /**
@@ -58,5 +89,10 @@ public class Main {
         int[] items = new int[]{5, 10404, -234348, -53, 9, 91, 92, 34534, 12334, 1435};
 
         //Write your code here
+        int sum = 0;
+        for(int i = 0; i < items.length; i++){
+            sum += items[i];
+        }
+        System.out.println("Total = " + sum);
     }
 }
