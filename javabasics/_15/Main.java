@@ -22,7 +22,7 @@ public class Main {
         int yearsPast = 0;
         double interestGainedThisYearEuros = 0;
 
-        while (true) {
+        while (currentInvestmentValueEuros <= 100000) {
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
@@ -58,6 +58,13 @@ public class Main {
         int maxPoundsToSellPerDay = 1_000;
 
         // Write your while loop here
+        while(remainingPoundsToSell != 0){
+            if(poundToEuroExchangeRate >1.15) {
+                remainingPoundsToSell -= maxPoundsToSellPerDay;
+            }
+            daysToSell++;
+            poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
+        }
 
         System.out.println("It took " + daysToSell + " to exit that cursed economy");
     }
