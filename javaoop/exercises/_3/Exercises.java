@@ -20,6 +20,15 @@ public class Exercises {
         System.out.println("Exercise 1:");
 
         // Write and use your 5 getters and setters!
+        Student student = new Student();
+        student.setName("Vincenzo");
+        student.setSurname("Merola");
+        student.setAge(29);
+        student.setMatricola("ABCD01");
+        student.setNameCourse("Java");
+
+        System.out.println(student.getName() + " " + student.getSurname() + " " +
+                student.getAge() + " " + student.getMatricola() + " " + student.getNameCourse());
     }
 
     /**
@@ -36,6 +45,15 @@ public class Exercises {
         System.out.println("\nExercise 2:");
 
         //Write your code here
+        Student student = new Student();
+        student.setName("Vincenzo");
+        student.setSurname("Merola");
+
+        //error
+        student.setAge(-12);
+
+        student.setMatricola("ABCD01");
+        student.setNameCourse("Java");
     }
 
 }
