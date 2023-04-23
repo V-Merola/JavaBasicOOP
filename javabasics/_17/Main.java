@@ -1,5 +1,5 @@
 package javabasics._17;
-
+import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
         exercise1();
@@ -63,6 +63,18 @@ public class Main {
      * create other days
      */
     public static void exercise3() {
+
         System.out.println("Exercise 3:");
+        myDate();
+    }
+    public static void myDate(){
+
+        System.out.println("Day = "+ LocalDate.now().getDayOfWeek() +"\n"
+                + "Day of Month =  "+LocalDate.now().getDayOfMonth() +"\n"
+                + "Number of day = " + LocalDate.now().getDayOfYear() +"\n"
+                + "Month name = " + LocalDate.now().getMonth() +"\n"
+                + "Month value = " + LocalDate.now().getMonthValue());
+        System.out.println(LocalDate.now().isBefore(LocalDate.of(1990,04,17)));
+        System.out.println(LocalDate.now().isAfter(LocalDate.of(2028,01,18)));
     }
 }
