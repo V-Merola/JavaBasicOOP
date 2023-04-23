@@ -21,11 +21,15 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Put this into a function
+
+        // End
+        System.out.println(celsiusToFahrenheit());
+    }
+    private static String celsiusToFahrenheit(){
         double celsius = 30;
         double fahrenheit = ((celsius * 9) / 5) + 32;
         String conversionDescription = celsius + " Celsius is " + fahrenheit + " fahrenheit";
-        // End
-        System.out.println(conversionDescription);
+        return conversionDescription;
     }
 
     /**
@@ -42,7 +46,17 @@ public class Main {
 
         for (String name : names) {
             // Call your function
+            System.out.println(stampa(name));
+
         }
+    }
+    private static String stampa(String name){
+        for(int i = 0; i < name.length(); i++){
+            if(Character.isDigit(name.charAt(i))){
+                return "Invalid";
+            }
+        }
+       return name.toUpperCase().trim();
     }
 
     /**
@@ -57,5 +71,9 @@ public class Main {
         int weightInGrams = 500;
 
         // Call your function
+        stampa(myLunchPrice, lunchType, description, weightInGrams);
+    }
+    private static void stampa(double myLunchPrice, String lunchType, String description, int weightInGrams){
+        System.out.println(myLunchPrice +" "+ lunchType + " "+ description +" "+  weightInGrams);
     }
 }

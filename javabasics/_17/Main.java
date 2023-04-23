@@ -27,6 +27,7 @@ public class Main {
         long questionableFundsEuro = 5_000_000_000l;
 
         //Add the questionable funds to your bank balance and print it out!
+        System.out.println(myBankBalanceEuro + questionableFundsEuro);
     }
 
     /**
