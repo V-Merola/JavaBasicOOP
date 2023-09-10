@@ -1,5 +1,5 @@
-/*
-package main.java.javaoop.exercises._4;
+
+package javaoop.exercises._4;
 
 import java.util.Random;
 
@@ -15,9 +15,14 @@ public class Exercises {
      * 1: Create variables with the MINIMUM POSSIBLE scope for currentCount and totalCount (both ints)
      */
 
-/*
+
    public static void exercise1() {
         System.out.println("Exercise 1:");
+
+       int currentCount = 0;
+       int totalCount = 0;
+       int luckyRolls = 0;
+
        for (int i = 0; i < 100; i++) {
             while (rollD6() == 6) {
                 luckyRolls++;
@@ -40,7 +45,7 @@ public class Exercises {
      * <p>
      * 2b: Now change these modifiers to the MINIMUM possible scope, to have no errors
      */
-/*
+
     public static void exercise2() {
         System.out.println("\nExercise 2:");
         ExerciseLunch exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
@@ -53,9 +58,11 @@ public class Exercises {
      *
      *    Only make edits that remove or add the words, static or final
      */
-/*
+
     public void exercise3() {
-        final ExerciseLunch exerciseLunch = null;
+        System.out.println("\nExercise 3:");
+
+        ExerciseLunch exerciseLunch = null;
         exerciseLunch = new ExerciseLunch(3.4, "Tuesday");
         ExerciseLunch.printMaxPrice();
     }
@@ -66,7 +73,7 @@ public class Exercises {
      *    and can be accessed anywhere in this class, but nowhere else.
      *    use SNAKE_CASE naming
      */
-/*
+
     public static void exercise4() {
         System.out.println("\nExercise 4:");
         for (int week = 0; week < 52; week++) {
@@ -78,4 +85,3 @@ public class Exercises {
         }
     }
 }
-*/
